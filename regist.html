@@ -1,0 +1,63 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>registration</title>
+        <h2>REGISTRATIONFORM:</h2>
+        <style>
+            body{
+                background-color: palevioletred;
+                text-align: center;
+
+          }
+            form{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+      <form name=registration form></form>
+<label for="name"><b>Username:</b>
+      <input type="text"placeholder="Enter your name"name="username"></label>
+      <br>
+      <br>
+      <br>
+      <label for="password"><b>Password:</b>
+      <input type="possword"id="password" placeholder="Enter your password" name="password"required minlength="7"></label><br>
+      <br>
+      <br>
+      <label for="confirmpassword"><b>Confirm password:</b>
+      6jytrhvgcr3 mfvtkdw,o547 vraholder="Enter your confirmpassword"name="confirmpassword"required minlength="7"></label><br>
+      <br>
+      <br><label for="email"><b>Email:</b>
+      <input type="email"placeholder="Enter your email"name="email"></label><br>
+      <br>
+      <br>
+      <label for="phonenumber"><b>Phone number:</b>
+      <input type="phonenumber"placeholder="Enter your phonenumber"name="phonenumber"></label><br>
+      <br>
+      <br>
+     <button type="button"onclick="validate form()">register</button>
+
+    </form>
+
+    <script>
+        function validateform(){
+        var username=document.getElementById('username').value;
+        var password=document.getElementById('password').value;
+        var confirmpassword=document.getElementById('confirmpassword').value;
+        var email=document.getElementById('email').value;
+        var mobile=document.getElementById('mobile').value;
+        if(username===""||password===""||confirmpassword===""||email===""||mobile==="")
+        {
+            alert("plesefill fields");
+        }  
+        if(password!==confirmpassword)
+        {
+            alert("password dont match");
+        }
+        alert("registration form sucssesfully")
+        }
+        </script>
+    </body>
+</html>
